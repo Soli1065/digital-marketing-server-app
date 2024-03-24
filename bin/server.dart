@@ -26,12 +26,130 @@ class CourseService extends GetCoursesServiceBase{
         ..id = 1
         ..title = 'Dart for Beginners'
         ..subtitle = 'Learn the fundamentals of Dart'
-        ..description = 'This course will teach you the basics of Dart, a powerful and versatile programming language.',
+        ..description = 'This course will teach you the basics of Dart, a powerful and versatile programming language.'
+        ..lessons.addAll([
+          Lesson()
+           ..id = 1
+           ..title = 'Introduction'
+           ..description = 'This lesson will teach you the fundamentals of Dart, a powerful and versatile programming language.'
+           ..questions.addAll([
+              Question()
+               ..id = 1
+               ..title = 'What is Dart?'
+               ..options.addAll([
+                 'option 1',
+                 'option 2',
+                 'option 3',
+                 'option 4',
+                ])
+              ..correctOption = 'option 1',
+             Question()
+               ..id = 1
+               ..title = 'What is Flutter?'
+               ..options.addAll([
+                 'option 1',
+                 'option 2',
+                 'option 3',
+                 'option 4',
+               ])
+               ..correctOption = 'option 2',
+
+           ])
+          ,
+          Lesson()
+            ..id = 2
+            ..title = 'Variables'
+            ..description = 'This lesson will teach you the basics of Dart, a powerful and'
+            ..questions.addAll([
+              Question()
+                ..id = 1
+                ..title = 'What is Dart?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 1',
+              Question()
+                ..id = 1
+                ..title = 'What is Flutter?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 2',
+
+            ])
+
+        ])
+      ,
       Course()
         ..id = 2
         ..title = 'Flutter for Beginners'
         ..subtitle = 'Build beautiful mobile apps with Flutter'
-        ..description = 'This course will teach you how to build beautiful and responsive mobile apps with Flutter, a powerful and flexible UI toolkit for building native iOS and Android apps.',
+        ..description = 'This course will teach you how to build beautiful and responsive mobile apps with Flutter, a powerful and flexible UI toolkit for building native iOS and Android apps.'
+        ..lessons.addAll([
+          Lesson()
+            ..id = 1
+            ..title = 'Flutter for Beginners'
+            ..description = 'This lesson will teach you the fundamentals of Dart, a powerful and versatile programming language.'
+            ..questions.addAll([
+              Question()
+                ..id = 1
+                ..title = 'What is Dart?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 1',
+              Question()
+                ..id = 1
+                ..title = 'What is Flutter?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 2',
+
+            ])
+          ,
+          Lesson()
+            ..id = 2
+            ..title = 'Variables'
+            ..description = 'This lesson will teach you the basics of Dart, a powerful and'
+            ..questions.addAll([
+              Question()
+                ..id = 1
+                ..title = 'What is Dart?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 1',
+              Question()
+                ..id = 1
+                ..title = 'What is Flutter?'
+                ..options.addAll([
+                  'option 1',
+                  'option 2',
+                  'option 3',
+                  'option 4',
+                ])
+                ..correctOption = 'option 2',
+
+            ])
+
+        ])
+      ,
     ]);
 
   }
