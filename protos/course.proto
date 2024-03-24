@@ -1,13 +1,20 @@
 syntax = "proto3";
 
-service MyService {
-  rpc SayHello (HelloRequest) returns (HelloResponse);
+
+service GetCoursesService {
+  rpc GetCourses (GetCoursesRequest) returns (GetCoursesResponse);
 }
 
-message HelloRequest {
-  string name = 1;
+message GetCoursesRequest {}
+
+message GetCoursesResponse {
+  repeated Course courses = 1;
 }
 
-message HelloResponse {
-  string message = 1;
+
+message Course {
+  int32 id = 1;
+  string title = 2;
+  string description = 3;
+  string subtitle = 4;
 }

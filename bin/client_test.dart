@@ -8,15 +8,15 @@ Future<void> main() async {
       options: const ChannelOptions(credentials: ChannelCredentials.insecure()));
 
   // Create a gRPC client for your service
-  final client = MyServiceClient(channel);
+  final client = GetCoursesServiceClient(channel);
 
   // Make a gRPC call to the SayHello method
-  final response = await client.sayHello(
-      HelloRequest()..name = 'Alice',
+  final response = await client.getCourses(
+      GetCoursesRequest(),
       options: CallOptions(timeout: Duration(seconds: 30)));
 
   // Print the response from the server
-  print('Response from server: ${response.message}');
+  print('Response from server: ${response.courses.toString()}');
 
   // Close the gRPC channel
   await channel.shutdown();
