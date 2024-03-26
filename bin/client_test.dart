@@ -3,7 +3,11 @@ import 'package:grpc/grpc.dart';
 
 Future<void> main() async {
   // Create a gRPC channel to connect to the server
-  final channel = ClientChannel('localhost',
+  // final channel = ClientChannel('localhost',
+  //     port: 50051,
+  //     options: const ChannelOptions(credentials: ChannelCredentials.insecure()));
+
+  final channel = ClientChannel('46.249.100.159',
       port: 50051,
       options: const ChannelOptions(credentials: ChannelCredentials.insecure()));
 
